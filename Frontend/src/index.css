@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* ── Prose overrides for chat markdown ── */
+.prose {
+  color: inherit;
+}
+.prose p {
+  margin: 0 0 0.5em;
+}
+.prose p:last-child {
+  margin-bottom: 0;
+}
+.prose pre {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.75em 0;
+}
+.prose code:not(pre code) {
+  background: rgba(255,255,255,0.08);
+  border-radius: 0.3em;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+  color: #4ade80;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  font-size: 0.85em;
+}
+.prose th {
+  background: rgba(255,255,255,0.05);
+  padding: 0.4em 0.75em;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+}
+.prose td {
+  padding: 0.4em 0.75em;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.prose ul, .prose ol {
+  padding-left: 1.4em;
+  margin: 0.5em 0;
+}
+.prose li {
+  margin-bottom: 0.2em;
+}
+.prose strong {
+  color: #fff;
+  font-weight: 700;
+}
+.prose h1, .prose h2, .prose h3 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0.75em 0 0.3em;
+}
+.prose a {
+  color: #4ade80;
+  text-decoration: underline;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Selection */
+::selection {
+  background: rgba(74, 222, 128, 0.25);
+}

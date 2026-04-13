@@ -1,0 +1,10 @@
+we have cleaned the code for better readability and logic and flow using AI
+
+Now we will be working on the Authentication and Authorization Hence we will be needing 
+bcryptjs 
+jsonwebtoken 
+express-rate-limit
+
+These Libraries must be isntalled in Express to Handle Requests with Authentication and AUthorization 
+Refer to their documentation to see their actual use case.
+
